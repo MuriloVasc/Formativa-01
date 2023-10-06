@@ -1,0 +1,414 @@
+/* Estilos gerais */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #C0C0C0;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-style: inset;
+}
+
+header h1 {
+    font-size: 36px;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    color: black;
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilos do banner */
+
+#banner img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+
+}
+
+/* Estilos da seção Sobre Nós */
+
+#sobre {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center
+    
+}
+
+#sobre h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos da seção Produtos */
+
+#produtos {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.produto {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.produto img {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4dvh;
+}
+
+.produto h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Estilos da seção Contato */
+
+#contato {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+#contato p {
+    margin: 10px 0;
+}
+
+/* Estilos do rodapé */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+h4 {
+    margin-left: 38%;
+    font-size: 50px;
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 7dvb;
+    
+}
+
+.content {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #333;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+
+h1{font-family: 'Pacifico', cursive; font-weight: normal;
+  }
+
+
+section#produtos div button{
+    border: 1px solid #3359ec;
+    background-color: #fff;
+    color: #9e9e9e;
+    padding: 1rem;
+    font-size: .8vw;
+    font-weight: 600;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .6s ease-out;
+ }
+ 
+ section#produtos div button:hover{
+    background-color: #3359ec;
+    color: #fff;
+    transform: scale(1.2);
+ }
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.yes{
+    position: relative; /* Adicione esta linha */
+    height: 360px;
+    width: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 200px;
+    margin-bottom: -150px;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3;
+}
+
+.bar :hover{
+    background-color: white;
+
+}
+
+input{ display: none;}
+
+.slides{
+    display: flex;
+    width: 550%;
+    height: 100%;
+    
+
+}
+
+.slides img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#slide1:checked ~ .s1{margin-left: 0%;}
+#slide2:checked ~ .s1{margin-left: -20%;}
+#slide3:checked ~ .s1{margin-left: -40%;}
+#slide4:checked ~ .s1{margin-left: -60%;}
+#slide5:checked ~ .s1{margin-left: -80%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 90%;
+    max-height: 28vw;
+    overflow: hidden;
+  }
+  
+  .gallery:before,
+  .gallery:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    z-index: 3;
+  }
+  
+  .gallery:before {
+    left: 0;
+    background:  linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  }
+  
+  .gallery:after {
+    right: 0;
+    background:  linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  }
+  
+  .gallery__stream {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .gallery__item {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: 1s all ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 5px;
+  }
+  
+  .gallery__item:nth-child(1) {
+    left: 0;
+    z-index: 1;
+    transform: translateX(-100%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(2) {
+    left: 0;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(3) {
+    left: 50%;
+    z-index: 4;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  .gallery__item:nth-child(4) {
+    left: 100%;
+    z-index: 2;
+    transform: translateX(-50%) scale(.8);
+  }
+  
+  .gallery__item:nth-child(n+5) {
+    left: 100%;
+    z-index: 1;
+    transform: scale(.8);
+  }
+  
+  /* Controllers */
+  
+  .gallery__prev,
+  .gallery__next {
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%) scale(.8);
+    cursor: pointer;
+  }
+  
+  .gallery__prev {
+    left: 0;
+  }
+  
+  .gallery__next {
+    left: 100%;
+  }
+  
+  /* Backgrounds */
+  
+  .bg-1 {
+    background-image: url(https://3.bp.blogspot.com/-URuAzn8YxPY/VOPVF-98G9I/AAAAAAACBks/_2dvTY4rqIU/s1600/Mercedes-Benz-S600_Pullmam%2B.jpg);
+  }
+  
+  .bg-2 {
+    background-image: url(https://quatrorodas.abril.com.br/wp-content/uploads/2022/12/Mercedes-AMG-S-63-E-PERFORMANCE-00019-e1670534021457.jpg?quality=70&strip=info&w=680&h=453&crop=1
+    );
+  }
+  
+  .bg-3 {
+    background-image: url(https://www.mercedes-benz.fr/content/france/fr/passengercars/the-brand/rubrique-evenements/events/mercedes-maybach-haute-voiture/_jcr_content/root/responsivegrid/simple_stage_copy.component.damq1.3341901513614.jpg/Actu-Maybach-stage_edit.jpg
+    );
+  }
+  
+  .bg-4 {
+    background-image: url(https://e0.pxfuel.com/wallpapers/95/672/desktop-wallpaper-black-car-mercedes-amg-gt-car-background-0eb9cd-mercedes-dark.jpg);
+  }
+  
+  .bg-5 {
+    background-image: url(https://www.planetcarsz.com/img/carros/galeria/2022/04/mercedes-amg-sl-63-2022-053-20220406171446-1280x925.jpg);
+  }
+  
+  .bg-6 {
+    background-image: url(https://www.razaoautomovel.com/wp-content/uploads/2021/02/Mercedes-Benz-EQA-1_925x520_acf_cropped_925x520_acf_cropped-925x520.jpeg
+    );
+  }
+  
+  .bg-7 {
+    background-image: url(https://wallpapers.com/images/hd/4k-mercedes-car-2018-0f2otaa9l0gn0xjr.jpg);
+  }
